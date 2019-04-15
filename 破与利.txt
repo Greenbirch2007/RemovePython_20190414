@@ -4,19 +4,20 @@
 
 １．重新安装linux最新版本
 ２．重装mysql
+sudo apt-get install mysql-server-5.6
+
 3.重新设置python的虚拟环境和pycharm(这个暂时不着急，要以java为主了)
+virtualenv -p /usr/bin/python3.6  myproject
+
 ４．重新安装anki(需要的化)
 ５．清理内存和文件！
 ６．重装git
+sudo apt-get install git
+7. 安装workbench
+sudo apt-get install mysql-workbench
 
+8.安装pycharm
 
-
-几个收藏网址
-
-https://github.com/Greenbirch2007?tab=repositories
-https://weibo.com/u/5486924033/home?wvr=5
-https://www.w3cschool.cn/cpp/cpp-storage-classes.html
-https://www.w3cschool.cn/java/java-array.html
 
 
 

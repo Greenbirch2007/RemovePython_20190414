@@ -1,0 +1,7 @@
+
+下载安装之后
+
+１．mkdir /usr/local/java
+
+2. sudo mv /home/g/Downloads/jdk1.8.0_191  usr/local/java
+(cp /usr/java/jdk1.8.0_191  usr/local/java/jdk1.8.0_191)

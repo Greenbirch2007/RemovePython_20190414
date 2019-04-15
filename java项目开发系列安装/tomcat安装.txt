@@ -1,0 +1,13 @@
+
+下载解压之后
+
+１．
+mkdir /usr/local/tomcat
+
+2. sudo mv /home/karson/Downloads/apache-tomcat-8.5.35 /usr/local/tomcat/
+
+3. 进入tomcat安装bin目录并启动
+
+cd /usr/local/tomcat/apache-tomcat-8.5.35/bin
+
+./startup.sh

@@ -1,0 +1,35 @@
+
+sudo su  进入管理员状态
+
+1. mkdir /usr/java
+2. mv 当前java文件(/home/karson/JAVA_idea)　　/usr/java
+sudo mv /home/g/JAVA_idea   /usr/java
+
+
+3.修改环境变量
+
+vim /etc/profile
+
+
+在文件末尾添加如下内容()
+
+用vim编辑器来编辑profile文件，在文件末尾添加一下内容（按“i”进入编辑）：
+
+export JAVA_HOME=/usr/java/jdk1.8.0_201
+export JRE_HOME=${JAVA_HOME}/jre
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib:$CLASSPATH
+export JAVA_PATH=${JAVA_HOME}/bin:${JRE_HOME}/bin
+export PATH=$PATH:${JAVA_PATH}
+
+４．保存文件并退出(wq!)
+5. source /etc/profile    通过命令source /etc/profile让profile文件立即生效
+
+
+6.  rm -rf /usr/java  删除java文件夹
+７．第四步、测试是否安装成功
+
+①、使用javac命令，不会出现command not found错误
+
+②、使用java -version，出现版本为java version "1.8.0_131"
+
+③、echo $PATH，看看自己刚刚设置的的环境变量配置是否都正确
